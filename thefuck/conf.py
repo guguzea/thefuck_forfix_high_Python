@@ -8,8 +8,6 @@ from warnings import warn
 from six import text_type
 from . import const
 from .system import Path
-
-
 class Settings(dict):
     def __getattr__(self, item):
         return self.get(item)
